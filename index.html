@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="Stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+</head>
+
+<body>
+    <h1> Track Your Dream Job </h1>
+    <form id="jobForm">
+        <label for="company">Company Name</label><br>
+        <input type="text" placeholder="Enter Company Name" id="company" name="company"><br><br>
+
+        <label for="role">Job Role</label><br>
+        <input type="text" placeholder="Job_type" id="role" name="role"><br><br>
+
+        <label for="location">Location</label><br>
+        <input type="text" placeholder="Enter Location" id="location" name="location"><br><br>
+
+        <label for="status">Status</label><br>
+        <select id="status" name="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Selected">Selected</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+
+        <button type="button" id="addJobBtn">Add Job</button>
+    </form>
+    
+    <input type="text" id="searchInput" placeholder="Search company or role">
+    <label for="statusFilter">Filter by Status:</label>
+
+<select id="statusFilter">
+    <option value="All">All</option>
+    <option value="Applied">Applied</option>
+    <option value="Interview">Interview</option>
+    <option value="Selected">Selected</option>
+    <option value="Rejected">Rejected</option>
+</select>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="jobTableBody">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

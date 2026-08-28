@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f6f8;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+form{
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px auto;
+}
+input {
+    width: 100%;
+     padding: 8px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+select{
+    width: 100%;
+    padding: 8px;
+}
+button{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+button:hover{
+    background-color: rgb(170, 56, 94);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th{
+    background-color: rgb(38, 155, 124);
+    color: white;
+    text-align: center;
+}
+tbody tr:hover{
+    background-color: rgb(181, 216, 239);
+}
+
+@media (max-width: 600px){
+
+    body{
+        padding: 10px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    table{
+        font-size: 14px;
+    }
+
+    th, td{
+        padding: 8px;
+    }
+
+    td button{
+        width: 70px;
+        padding: 6px;
+    }
+
+}
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#statusFilter {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+td button{
+    width: 90px;
+    margin: 3px;
+    padding: 8px;
+}
+
+td button:hover{
+    background-color: rgb(170, 56, 94);
+}
